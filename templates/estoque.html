@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Controle de Estoque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--link minificado do font elsom-->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../imagens_geral/perfil_profissional/imagem_perfil (1).png"
+                    alt="perfil do profissional" class="rounded-circle" width="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <p>Olá, Kaio! <br> Bem-vindo(a)</p>
+                    <li class="nav-item dropdown">
+                </ul>
+                <div class="orgmenuu">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Digite..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+
+                <div class="social-media">
+                    <a href="perfil_profissional.html">
+                        <img src="../imagens_geral/perfil_profissional/sair.png"
+                            alt="imagem para o usuario sair do site" class="media-object" width="45px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <form class="mim">
+        <div class="col-6">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Qual a categoria ?</option>
+                <option value="1">Roupas</option>
+                <option value="2">Acessorios</option>
+                <option value="3">Bonés</option>
+            </select>
+        </div>
+        <div class="col-6">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Qual categoria?</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="mim">
+        <h2 class="text-center">Lista de produtos cadastrados:</h2>
+
+      <div class="tabela">
+        <table class="table">
+            <button type="button" class="btn btn-warning">Novo Produto</button>
+            <thead class="table-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Item</th>
+                    <th>Categoria</th>
+                    <th class="tabcenter">Q. Minima</th>
+                    <th class="tabcenter">Em estoque</th>
+                    <th>Visualizar</th>
+                    <th>Registrar E.</th>
+                    <th>Registrar S.</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="wai">
+                    <td>01</td>
+                    <td>Bermuda KC</td>
+                    <td>Masculino</td>
+                    <td class="tabcenter">12</td>
+                    <td class="tabcenter">15</td>
+                    <td><button type="button" class="btn btn-primary">VER</button></td>
+                    <td><button type="button" class="btn btn-success">Entrada</button> </td>
+                    <td><button type="button" class="btn btn-danger">Saída</button></td>
+                </tr>
+                <tr class="wai">
+                    <td>02</td>
+                    <td>Sapatilha StL</td>
+                    <td>Feminino</td>
+                    <td class="tabcenter">08</td>
+                    <td class="tabcenter">10</td>
+                    <td><button type="button" class="btn btn-primary">VER</button></td>
+                    <td><button type="button" class="btn btn-success">Entrada</button></td>
+                    <td><button type="button" class="btn btn-danger">Saída</button></td>
+                </tr>
+                <tr class="wai">
+                    <td>03</td>
+                    <td>Tenis Nike</td>
+                    <td>Masculino</td>
+                    <td class="tabcenter">11</td>
+                    <td class="tabcenter">22</td>
+                    <td><button type="button" class="btn btn-primary">VER</button></td>
+                    <td><button type="button" class="btn btn-success">Entrada</button></td>
+                    <td><button type="button" class="btn btn-danger">Saída</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
