@@ -1,12 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Híbrido</title>
+    <!--CSS Externo-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+    <!--Barra de Navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HÍBRIDO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Jeans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Masculimo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                  <li><a class="dropdown-item" href="#">Polos</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Jaquetas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Feminino
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Blusas</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                  <li><a class="dropdown-item" href="#">Batas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Jaquetas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Juvenil
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Blusas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                  <li><a class="dropdown-item" href="#">Tênis</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Esportes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Basquete</a></li>
+                  <li><a class="dropdown-item" href="#">Corrida</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness</a></li>
+                  <li><a class="dropdown-item" href="#">Futebol</a></li>
+                  <li><a class="dropdown-item" href="#">Skate</a></li>
+                  <li><a class="dropdown-item" href="#">Surf</a></li>
+                </ul>    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Calçados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tênis</a></li>
+                  <li><a class="dropdown-item" href="#">Botas</a></li>
+                  <li><a class="dropdown-item" href="#">Chinelos</a></li>
+                  <li><a class="dropdown-item" href="#">Saltos</a></li>
+                  <li><a class="dropdown-item" href="#">Rasteirinhas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Perfil
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="login.html">Entrar</a></li>
+                  <li><a class="dropdown-item" href="cadastro.html">Cadastro</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carrinho-de-compras.html"><img src="Imagens/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   
+    <!--Carrossel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <!--Imagem 1: https://taco.vteximg.com.br/arquivos/ids/399441/vitrine%2022-03%20t-shirt.gif?v=637835677224500000-->
+            <img src="https://taco.vteximg.com.br/arquivos/ids/397059/vitrine%20desk%20t-shirt.gif?v=637820019279400000" class="d-block w-100" alt="Imagem Carrocel 1" height="300px">
+          </div>
+          <div class="carousel-item">
+              <!--Imagem 2:> https://taco.vteximg.com.br/arquivos/ids/399442/vitrine%2022-03%20shorts.gif?v=637835679680530000-->
+            <img src="https://taco.vteximg.com.br/arquivos/ids/397394/SHORT-PROMO-DESK2-.gif?v=637822706281630000" class="d-block w-100" alt="Imagem Carrocel 2" height="300px">
+          </div>
+          <div class="carousel-item">
+            <!--Imagem 3: https://taco.vteximg.com.br/arquivos/ids/399443/vitrine%2022-03%20bermuda.gif?v=637835682109830000-->
+            <img src="https://taco.vteximg.com.br/arquivos/ids/397060/vitrine%20desk%20bermuda.gif?v=637820019594470000" class="d-block w-100" alt="Imagem Carrocel 3" height="300px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+ 
+    <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20jeaans.jpg?v=637768316529900000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">JEANS</h1>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20basicas.jpg?v=637768316524530000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">CAMISETAS</h1>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20bermudas.jpg?v=637768316526300000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">BERMUDAS</h1>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20polos.jpg?v=637768316530200000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">POLOS</h1>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20Regatas.jpg?v=637768316533330000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">REGATAS</h1>
+          </div>
+          <div class="col-12 col-lg-2">
+            <p class="text-center"><img src="https://www.taco.com.br/arquivos/CATEGORIA%20MASC%20DESK%20estampadas.jpg?v=637768316527700000" alt="" width="600px" height="600px" class="img-fluid rounded-circle"></p>
+            <h1 class="text-center">T-SHIRT</h1>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6">
+              <img src="https://cdn.pixabay.com/photo/2017/08/10/01/23/shopping-2616824_960_720.jpg" alt="Fachada da loja" class="img-fluid">                  
+          </div>
+          <div class="col-12 col-lg-6">
+              <h1 class="text-center">HÍBRIDO</h1>
+              <p class="texter-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto at laboriosam consequatur dolores nesciunt illo soluta aut incidunt provident cupiditate doloremque tenetur voluptas repudiandae sequi modi, non possimus? Dicta.</p>
+              <p class="texter-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto at laboriosam consequatur dolores nesciunt illo soluta aut incidunt provident cupiditate doloremque tenetur voluptas repudiandae sequi modi, non possimus? Dicta.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus corrupti accusantium ab vel, illo voluptatibus quis hic, debitis eius quam, autem velit quae laudantium nostrum accusamus eos minima delectus!</p>
+          </div>
+
+          <div class="row mt-5">
+            <h2 class="text-center">INVERNO HÍBRIDO</h2>
+          </div>
+      </div>
+
+      <!--Album de Produtos-->
+      <div class="album py-5 bg-light">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://images.yampi.io/unsafe/fit-in/700x700/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/belotrage/uploads/images/moletom-streetwear-black-sweatshirt-men-asian-m-60b67dcdc7f8b-large.jpg" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://www.ofertaviva.com.br/photo-2/singleroad-hoodies-dos-homens-moletom-impressao-pulover-japones-streetwear-harajuku-hip-hop-moda-moletom-masculino-com-capuz.jpg" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://images.yampi.io/unsafe/fit-in/1000x1000/filters:background_color(white):upscale()/https://images.yampi.me/assets/stores/belotrage/uploads/images/moletom-streetwear-masculino-blue-sweatshirt-men-asian-m-60b674cbcfa52-large.jpg" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://santogato.com/129-large_default/hoodie-moletom-masculino-streetwear-estampa-desenho-cartoon.jpg" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://cdn.shopify.com/s/files/1/0606/8738/4789/products/product-image-1818178217.jpg?v=1645632202" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <a href="detalhe-itens.html"><img src="https://static.wixstatic.com/media/1e4ced_a9b9c124d65b4f0b8ad79989549a5ffd~mv2.png/v1/fill/w_525,h_525,al_c,q_90,usm_0.66_1.00_0.01/1e4ced_a9b9c124d65b4f0b8ad79989549a5ffd~mv2.webp" alt="" width="100%" height="225" class="img-fluid rounded mx-auto d-block"></a>
+                <div class="card-body">
+                  <h4>Moletom</h4>
+                  <p class="card-text">Este é um cartão mais amplo com texto de apoio abaixo como uma introdução natural para conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!--RODAPE-->
+     <footer>
+        <div class="row rodape mt-5 bg-dark">
+          <ul class="nav justify-content-center border-bottom pb-3 mt-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Recursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preços</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Perguntas frequentes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+          </ul>
+          <div class="col-12">
+              <p class="text-center mt-3">Todos os direitos reservados - Híbrido 2022</p>
+              <p class="text-center">Av. princpal, S/N, Canguaretama - RN</p>
+              <p class="text-center mb-5">&copy; 2022 Company, Inc</p>
+          </div>
+        </div>
+    </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
