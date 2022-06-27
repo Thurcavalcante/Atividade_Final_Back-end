@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from core.views import home, login
+from core.views import home, login, cadastro
 
 urlpatterns = [
     path('', home),
