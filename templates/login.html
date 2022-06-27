@@ -15,7 +15,9 @@
     </style>
 </head>
 <body>
-    
+    {% extends 'bases/base.html' %}
+
+    {% block conteudo %}
     <div class="container">
         <h1>Conecte-se</h1>
         <div class="social-media">
@@ -56,5 +58,6 @@
     <div class="images">
         <img src="../imagens_geral/telas_login_cadastro/celular_sem_fundo.png" alt="Mobile">
     </div>
+    {% endblock %}
 </body>
 </html>
