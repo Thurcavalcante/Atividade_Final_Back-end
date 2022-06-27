@@ -6,5 +6,6 @@ urlpatterns = [
     path('', home),
     path('admin/', admin.site.urls),
     path('login/', login, name="login"),
+    path('cadastro/', cadastro, name="cadastro"),
     #path('/', home),
 ]

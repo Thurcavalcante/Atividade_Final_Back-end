@@ -1,0 +1,247 @@
+body                                                                /*Se aplica a pagina inicial e cardapio*/
+{
+    background: linear-gradient(45deg, #1B2029, #737392);
+   
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(194, 202, 202);
+}
+
+p
+{
+   color: azure;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.tabcenter           /*Alinhomento de alguns itens das tabelas*/
+{
+  text-align: center;
+}
+
+.container {
+    text-align: center;
+  }
+
+  div.espaco{
+
+    margin-top: 140px;
+  }
+
+  div.espacom
+  {
+    margin-top: 200px;
+  }
+
+  footer.espaco
+  {
+    margin-top: 200px;
+  }
+
+  .justifi {
+    text-align: justify;
+    right: 100px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+   /*Para o link do whats*/
+   .whatsapp-link {
+    position: fixed;
+    /*deixa fixo, sem rolar junto com a pagina*/
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 30px;
+    top: 520px;
+    background-color: #25d366;
+    /*link do whats é a bolinha verde.*/
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+  }
+
+  .fa-whatsapp {
+    /*Faz referencia ao simbolo do whats*/
+    margin-top: 16px;
+  }
+
+  /*Efeito da imagem link*/
+  img.media-object{
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+img.media-object:hover{
+    -webkit-filter: drop-shadow(20px 15px 10px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+
+img.cardio{           /*efeito nos itens do cardapio*/
+  margin-top: 20px;
+}img.cardio{
+  transition: all .5s;
+  border: 10px solid transparent;
+}
+img.cardio:hover{
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+}
+
+
+ /*----------------------------------*/
+ div.promo{
+
+  float: left;
+  position: static;
+  margin-left: 20px;;
+
+}div.promo2{
+
+  background-color: chocolate;
+  float: left;
+  width: 150px;
+  height: 300px;
+  margin-top: 25px;
+
+}div.linhacard{
+
+  margin-top: 50px;
+  height: 365px;
+
+}div.alin{
+
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+
+}button.btn{
+
+  width: auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: block;
+
+}p.nomesc{              /*cardapio*/
+
+  text-align: center;
+  font-size: large;
+  font-style: italic;
+  font-weight: bolder;
+  color: rgb(255, 253, 253);
+
+}p.descr{
+
+  color: rgb(255, 253, 253);
+  text-align: center;
+
+}p.preco{
+
+  color: rgb(6, 134, 23);
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+
+}div.rod1{
+
+  background-color: rgb(173, 98, 98);
+  height: 300px;
+
+}
+
+
+img.cardio{           /*efeito nos itens do cardapio*/
+  margin-top: 20px;
+}img.cardio{
+  transition: all .5s;
+  border: 10px solid transparent;
+}
+img.cardio:hover{
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+}
+
+
+
+button.bntt
+{
+margin-top: 50px;
+}
+
+button.bcard  /*Filtro do cardapio*/
+{
+  margin-top: 10px;
+}
+
+label.checkcard
+{
+  color: #fff;
+}
+
+div.orgmenu     /*Menu usuario e profissional*/
+{
+  margin-left: 850px;
+}
+div.orgmenuu    /*Menu profissional, referente as telas de lista de itens*/
+{
+  margin-right: 15px;
+}
+
+tr.wai     /*configuração das tabelas lista de itens e compras realizadas*/
+{
+  color: #fff;
+}
+
+form.mim               /*Formulario e Div da lista de itens*/
+{
+  width: 400px;
+  margin-top: 40px;
+}
+
+div.mim
+{
+  margin-top: 40px;
+}
+
+div.tabela /*Configuração da tabela das paginas listas de itens e compras realizadas, para que a tabela roçe para o lado, só ela*/
+{
+  overflow-x: auto; /*overflow - significa "conteudo que transborda"*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {     /*Responsividade do cadastro do produto e dados dos clientes*/
+  form.aling                
+{
+height: 800px;
+width: 500px;
+margin-left: 200px;
+margin-top: 80px;
+font-weight: bolder;
+color: #fff;
+}
+                                                
+}
+
+
+@media only screen and (min-width: 1200px) {
+  form.aling                
+  {
+  height: 800px;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 80px;
+  font-weight: bolder;
+  color: #fff;
+  }
+}
