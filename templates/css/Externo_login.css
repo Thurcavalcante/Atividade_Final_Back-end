@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap'); /*link do google fontesiiii*/
+
+* {    /*resetando os padroes do navegador*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; /*Sendo assim, a propriedade box-sizing: border-box é utilizada para alterar esse padrão de cálculo das larguras e alturas dos elemento, ou seja, ela informa ao navegador que é necessário levar em conta as bordas e margens nos valores que você especificar para a largura e altura de um elemento.*/
+    font-family: "Poppins", sans-serif; /*colocando a como fonte principal aque foi pega do google-fontes, caso o navegador não encontre, utilizar a sans-serif*/
+}
+
+body {
+    background: #1B2029;
+    color: white;  /*Fonte com cor padrão branca*/
+    font-weight: 500; /*um pouco mais negrita, a fonte*/
+    display: flex;
+    min-height: 110vh;  /*Altura minima da pagina*/
+    min-width: 100vw; /*largura minima da pagina*/
+}
+
+.container {    /*configurações do conteudo da tela de ligin, menos o botão*/
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ h1 {  /*Configuração do titulo h1*/
+    color: #69696b;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;  /*centralizar o titulo*/
+}
+
+.social-media { /*Configuração do sicial-midia no geral*/
+    display: flex;
+    align-content: center;
+}
+
+ .social-media a { /*Configuração das imagens, link*/
+    text-decoration: none;
+}
+
+ .social-media img { /*Configuração das imagens do social-midia*/
+    width: 36px;
+    margin-left: 3rem;
+}
+
+ .social-media a:first-child img {/*Configuração - praticamente igual ao anterior, só que se refere ao "primeiro filho" imagem do google, enquanto a do fece e linquedim terão um espaçamento de 3rem a do google tera 0rem, para ficarem alinhadas*/
+    margin-left: 0;
+}
+
+ .alternative { /*Refere-se ao "OU" que fica abaixo dos icones do google, fece e linkdin*/
+    margin-top: 1rem;/*1rem de espaço dos icones*/
+}
+
+ .alternative span { /*Refere-se ao "OU" que fica abaixo dos icones do google, fece e linkdin*/
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+ .alternative span::before,  .alternative span::after { /*Configuração - Refere-se as linhas que ficam ao lado do "OU"*/
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+ .alternative span::after {
+    left: 50px;
+}
+
+ form { /*Configuração geral do form*/
+    display: flex;
+    flex-direction: column; /*seve para especificar que display-flex sera em formato de colunas, colocando os elementos um abaixo do outro, ao inves de ao lada*/
+    align-items: center;
+}
+
+ form label { /*Configuração do form, a parte que o usuario digita, "label" */
+    display: flex;
+    flex-direction: column;
+}
+
+ form label span { /*Configuração do form, a parte onde fica o "titulo" do campo, "span" */
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+ form input { /*Configuração do form, a parte que o usuario digita, "input" */
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem; /*espaçamento entre a borda e o conteudo que o usuario digita*/
+    margin-top: 1rem;
+    outline: none; /*outline - é a borda que fica quando o usuario clica ou passa o mouse em cima, o "none" serve para tirar essa borda*/
+    color: rgba(166, 166, 166); /*define a cor do texto dentro, quando o usuario digita */
+    font-size: 1rem; /*almenta a fonte */
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: #636FA4;
+}
+
+a:hover
+{
+     color: aliceblue;
+}
+
+.link
+{
+    margin-top: 1rem;
+}
+
+
+ form input[type="submit"] { /*Configuração do botão */
+    cursor: pointer; /*deix uma mãozinha quando passa o mause*/
+    width: 50%;
+    margin-top: 20 px;
+    border: none;
+    border-radius: 32px;
+    background: #038ef8; /*Cor do botão*/
+    color: rgb(17, 75, 151);        /*Cor da fonte*/
+    font-size: 1.1rem; /*Tamanho da fonte*/
+    transition: all .3s ease-in-out; /*Tempo de transição do efeito*/
+}
+
+ form input[type="submit"]:hover { /*Efeito - quando passar o mause o botão ira mudar de cor*/
+    background: white;
+    color:rgb(2, 0, 0) ;
+}
+
+
+.images { /*Configuração da imagem do celular*/
+    width: 50vw;    /*foi definido para pagina toda (body) uma largura de 100vw, desses 100, 50 ficou para o "main" (a parte onde esta o formulario) e os outros 50 para o "section.images" ( a parte onde esta a imagem e o circulo)*/
+    display: flex;
+    align-items: flex-end; /*"flex-end" alinha os elementos no final do container, ja o "flex-start" iria alinha no inicio */
+    justify-content: flex-end; /* deixa bem junto a borba direita da tela, ja o proximo comando vai dar o espaçamento das bordas*/
+    padding: 4rem; /*espaçamento das bordas*/
+}
+
+.images img { /*Configuração da imagem do celular*/
+    width: 90%; /*largura da imagem*/
+}
+
+
+    
+
+
+/*CONFIGURAÇÃO DE ACORDO COM OS TAMANHOS DE TELA - MIDIA QUERY*/
+
+                    /*min=largura minima*/     /*max=largura maxima*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) { 
+    .images img {
+        width: 110%;
+    }
+                                                  /*em quanto a largura da tela estiver entre 900px(minimo) e 1200px(maximo) a imagem era almentar */
+}
+
+@media only screen and (max-width: 900px) {
+    .images {
+        display: none;
+        visibility: hidden;  /*em quanto a largura maxima for ate 900px a imagem deve sumir*/
+    }
+
+    .container {
+        width: 100vw;   /*em quanto a largura maxima for ate 900px o "main (parte do formulario)" deve ocupar 100vw (largura total da tela, ficando no centro) ao inves de 50vw*/
+    }
+}
+
+@media only screen and (max-width: 450px) {
+     h1 {
+        font-size: 2rem;    /*em quanto a largura maxima for ate 450px o titulo tera um tamanho menor*/
+    }
+
+     .alternative span {
+        font-size: 0.8rem;    /*em quanto a largura maxima for ate 450px o "OU" sera menor*/
+    }
+
+     form label span,  form input[type="submit"] { /*em quanto a largura maxima for ate 450px os textos dos formularios e do botão, sera menor "1rem"*/
+        font-size: 1rem;
+    }
+}
