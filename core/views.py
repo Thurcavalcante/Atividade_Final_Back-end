@@ -10,4 +10,11 @@ from multiprocessing import context
 
 def home(request):
     return render(request, 'index.html')
+<<<<<<< HEAD
 >>>>>>> c9fc06639ce8b9b60b64f870871fddb8ccf2a51d
+=======
+def login(request):
+    return render(request, 'login.html')
+def cadastro(request):
+    return render(request, 'cadastro.html')
+>>>>>>> 3ec64d0faa4fcd81424efb2dda5d45062ee328bc
