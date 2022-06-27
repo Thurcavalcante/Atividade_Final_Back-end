@@ -1,11 +1,4 @@
 from django.shortcuts import render
-
-from django.http import HttpResponse
-
-def index(request):
-    return HttpResponse('<h1>Página inicial</h1>')
-# Create your views here.
-
 from multiprocessing import context
 
 def home(request):
