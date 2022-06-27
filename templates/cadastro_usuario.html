@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecte-se</title>
+    <title>Cadastre-se</title>
     <link rel="stylesheet" href="css/Externo_login.css">
-    <style type="text/css">
-        main form input[type="submit"]
-        {
-            margin-top: 3rem;
-        }
-    </style>
 </head>
 <body>
-    {% extends 'bases/base.html' %}
-
-    {% block conteudo %}
     <div class="container">
-        <h1>Conecte-se</h1>
+        <h1>Criar conta</h1>
         <div class="social-media">
             <a href="#">
                 <img src="../imagens_geral/telas_login_cadastro/google.png" alt="Logo do Google">
@@ -37,10 +28,19 @@
         </div>
 
         <form action="">
-            
+            <label for="name">
+                <span>Nome</span>
+                <input type="text" id="name" name="name" autofocus required>
+            </label>
+
+            <label for="name">
+                <span>CPF</span>
+                <input type="text" id="cpf" name="cpf" placeholder="Formato:  000.000.000-00" maxlength="14" autofocus required>
+            </label>
+
             <label for="email">
-                <span>Usuario</span>
-                <input type="email" id="email" name="email" placeholder="E-mail ou CPF" autofocus required>
+                <span>E-mail</span>
+                <input type="email" id="email" name="email" autofocus required>
             </label>
 
             <label for="password">
@@ -48,16 +48,11 @@
                 <input type="password" id="password" name="password" autofocus required>
             </label>
 
-            <div class="link">
-                <p> <a href="#">Esqueci minha senha.</a></p>
-            </div>
-
-            <input type="submit" value="Entrar" id="button">
+            <input type="submit" value="Criar" id="button" autofocus required>
         </form>
     </div>
     <div class="images">
         <img src="../imagens_geral/telas_login_cadastro/celular_sem_fundo.png" alt="Mobile">
     </div>
-    {% endblock %}
 </body>
 </html>
