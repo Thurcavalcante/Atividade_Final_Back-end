@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from core.views import home, login, cadastro_usuario, cadastro_itens, carrinho_compras, perfil, perfil_prof, estoque, detalhes_itens, cabecario, rodape
+from core.views import home, login, cadastro_usuario, cadastro_itens, carrinho_compras, perfil, perfil_prof, estoque, detalhe_itens, cabecario, rodape
 from core.views import base
 
 urlpatterns = [
@@ -13,7 +13,7 @@ urlpatterns = [
     path('perfil/', perfil, name="perfil"),
     path('perfil_prof/', perfil_prof, name="perfil_prof"),
     path('estoque/', estoque, name="estoque"),
-    path('detalhes_itens/', detalhes_itens, name="detalhes_itens"),
+    path('detalhe_itens/', detalhe_itens, name="detalhe_itens"),
     path('cabecario/', cabecario, name="cabecario"),
     path('rodape/', rodape, name="rodape"),
     path('base/', base, name="base"),
