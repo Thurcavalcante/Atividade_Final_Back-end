@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #a8a4a4;
+    background: #1B2029;
     color: white;  /*Fonte com cor padrão branca*/
     font-weight: 500; /*um pouco mais negrita, a fonte*/
     display: flex;
@@ -26,7 +26,7 @@ body {
 }
 
  h1 {  /*Configuração do titulo h1*/
-    color:  #161923;
+    color: #69696b;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;  /*centralizar o titulo*/
@@ -107,7 +107,7 @@ body {
 a:link
 {
     text-decoration: none;
-    color: #e6e8ee;
+    color: #636FA4;
 }
 
 a:hover
@@ -127,7 +127,7 @@ a:hover
     margin-top: 20 px;
     border: none;
     border-radius: 32px;
-    background: #b5b5b6; /*Cor do botão*/
+    background: #038ef8; /*Cor do botão*/
     color: rgb(17, 75, 151);        /*Cor da fonte*/
     font-size: 1.1rem; /*Tamanho da fonte*/
     transition: all .3s ease-in-out; /*Tempo de transição do efeito*/
