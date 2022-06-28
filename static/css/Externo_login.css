@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #1B2029;
+    background: #757679;
     color: white;  /*Fonte com cor padrão branca*/
     font-weight: 500; /*um pouco mais negrita, a fonte*/
     display: flex;
@@ -127,7 +127,7 @@ a:hover
     margin-top: 20 px;
     border: none;
     border-radius: 32px;
-    background: #038ef8; /*Cor do botão*/
+    background: #212122; /*Cor do botão*/
     color: rgb(17, 75, 151);        /*Cor da fonte*/
     font-size: 1.1rem; /*Tamanho da fonte*/
     transition: all .3s ease-in-out; /*Tempo de transição do efeito*/
