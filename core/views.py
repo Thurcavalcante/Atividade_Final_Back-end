@@ -6,6 +6,6 @@ def home(request):
 
 def login(request):
     return render(request, 'login.html')
-def cadastro(request):
+def cadastro_usuario(request):
     return render(request, 'cadastro_usuario.html')
 
