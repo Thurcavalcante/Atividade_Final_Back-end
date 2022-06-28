@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,8 +105,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/carrinho_compras"><img src="/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
-                <a class="nav-link active" aria-current="page" href="carrinho_compras.html"><img src="Imagens/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
+                <a class="nav-link active" aria-current="page" href="carrinho_compras.html"><img src="{% static 'imagens/bag-check.svg' %}"  alt="carinho de compra" height="20px" width="20px"></a>
               </li>
             </ul>
             <form class="d-flex">
