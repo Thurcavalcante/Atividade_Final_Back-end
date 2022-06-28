@@ -8,6 +8,113 @@
 </head>
 <body>
     {% block conteudo %}
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">HÍBRIDO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Jeans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Masculimo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                  <li><a class="dropdown-item" href="#">Polos</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Jaquetas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Feminino
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Blusas</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                  <li><a class="dropdown-item" href="#">Batas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Jaquetas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Juvenil
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                  <li><a class="dropdown-item" href="#">Regatas</a></li>
+                  <li><a class="dropdown-item" href="#">Moletom</a></li>
+                  <li><a class="dropdown-item" href="#">Blusas</a></li>
+                  <li><a class="dropdown-item" href="#">Calças</a></li>
+                  <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                  <li><a class="dropdown-item" href="#">Shorts</a></li>
+                  <li><a class="dropdown-item" href="#">Tênis</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Esportes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Basquete</a></li>
+                  <li><a class="dropdown-item" href="#">Corrida</a></li>
+                  <li><a class="dropdown-item" href="#">Fitness</a></li>
+                  <li><a class="dropdown-item" href="#">Futebol</a></li>
+                  <li><a class="dropdown-item" href="#">Skate</a></li>
+                  <li><a class="dropdown-item" href="#">Surf</a></li>
+                </ul>    
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Calçados
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tênis</a></li>
+                  <li><a class="dropdown-item" href="#">Botas</a></li>
+                  <li><a class="dropdown-item" href="#">Chinelos</a></li>
+                  <li><a class="dropdown-item" href="#">Saltos</a></li>
+                  <li><a class="dropdown-item" href="#">Rasteirinhas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Perfil
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/login">Entrar</a></li>
+                  <li><a class="dropdown-item" href="/cadastro_usuario">Cadastro</a></li>
+                  <li><a class="dropdown-item" href="perfil_prof.html">Perfil Profissional</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/carrinho_compras"><img src="/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
+                <a class="nav-link active" aria-current="page" href="carrinho_compras.html"><img src="Imagens/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     {% endblock %}
 </body>
 </html>
