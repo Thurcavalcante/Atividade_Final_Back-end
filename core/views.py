@@ -21,7 +21,8 @@ def detalhes_itens(request):
     return render(request, 'detalhes_itens.html')
 def cabecario(request):
     return render(request, 'cabecario.html')
-def rodape(request):  estoque, detalhes_itens
+def rodape(request): 
     return render(request, 'rodape.html')
-'''def (request):  estoque, detalhes_itens
+    
+'''def (request):  
     return render(request, '.html')'''
