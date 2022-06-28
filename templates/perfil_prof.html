@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,7 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!--link minificado do font elsom-->
-  <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+  <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
 
 </head>
 
@@ -19,7 +20,7 @@
   {% block conteudo %}
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../imagens_geral/perfil_profissional/imagem_perfil (1).png"
+      <a class="navbar-brand" href="#"><img src="{% static 'img_perfil_profissional/imagem_perfil (1).png' %}"
           alt="perfil do profissional" class="rounded-circle" width="70px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +43,7 @@
           </li>
           <div class="social-media">
             <a href="index.html">
-              <img src="../imagens_geral/perfil_profissional/sair.png" alt="imagem para o profissional sair do site"
+              <img src="{% static 'img_perfil_profissional/sair.png' %}" alt="imagem para o profissional sair do site"
                 class="media-object" width="45px">
             </a>
           </div>
@@ -59,19 +60,19 @@
     <div class="row  mt-3">
       <div class="col-12 col-sm-6 col-lg-4 text-center">
         <a href="lista_itens.html"><img style="height: 200px; width: 200px;"
-            src="../imagens_geral/perfil_profissional/adicionar_item.png" alt="Imagem link, para cadastro de produto"
+            src="{% static 'img_perfil_profissional/adicionar_item.png' %}" alt="Imagem link, para cadastro de produto"
             class="media-object img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Geênciamento de produtos</h5>
       </div>
       <div class="col-12 col-sm-6 col-lg-4 text-center">
         <a href="controle_estoque.html"><img style="height: 200px; width: 200px;"
-            src="../imagens_geral/perfil_profissional/controle_estoque.png" alt="Imagem link, para estoque de produto"
+            src="{% static 'img_perfil_profissional/controle_estoque.png' %}" alt="Imagem link, para estoque de produto"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Controle de estoque</h5>
       </div>
       <div class="col-12 col-sm-6 col-lg-4  text-center">
         <a href="#"><img style="height: 200px; width: 200px;"
-            src="../imagens_geral/perfil_profissional/gerencia_financeira.png"
+            src="{% static 'img_perfil_profissional/gerencia_financeira.png' %}"
             alt="Imagem link, para gerenciamento financeiro"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Gerênciento financeiro</h5>
@@ -81,18 +82,18 @@
     <div class="row  mt-3">
       <div class="col-12 col-sm-6 col-lg-4 text-center">
         <a href="#"><img style="height: 200px; width: 200px;"
-            src="../imagens_geral/perfil_profissional/nossos_clientes.png" alt="Imagem link, para dados dos clientes"
+            src="{% static 'img_perfil_profissional/nossos_clientes.png' %}" alt="Imagem link, para dados dos clientes"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Nossos clientes</h5>
       </div>
       <div class="col-12 col-sm-6 col-lg-4 text-center">
-        <a href="#"><img style="height: 200px; width: 200px;" src="../imagens_geral/perfil_profissional/Estrategias.png"
+        <a href="#"><img style="height: 200px; width: 200px;" src="{% static 'img_perfil_profissional/Estrategias.png' %}"
             alt="Imagem link, para pagina de estrategias"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Estratégias e gerênciamento <br> de equipe</h5>
       </div>
       <div class="col-12 col-sm-6 col-lg-4  text-center">
-        <a href="#"><img style="height: 200px; width: 200px;" src="../imagens_geral/perfil_profissional/relatorios.png"
+        <a href="#"><img style="height: 200px; width: 200px;" src="{% static 'img_perfil_profissional/relatorios.png' %}"
             alt="Imagem link, para relatorios"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Relatórios</h5>
