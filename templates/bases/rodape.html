@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodape</title>
+    <title>Rodapé</title>
 </head>
 <body>
     {% block conteudo %}
+    <footer>
+        <div class="row rodape mt-5 bg-dark">
+          <ul class="nav justify-content-center border-bottom pb-3 mt-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Recursos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preços</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Perguntas frequentes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
+          </ul>
+          <div class="col-12">
+              <p class="text-center mt-3 text-white">Todos os direitos reservados - Híbrido 2022</p>
+              <p class="text-center text-white">Av. princpal, S/N, Canguaretama - RN</p>
+              <p class="text-center mb-5 text-white ">&copy; 2022 Company, Inc</p>
+          </div>
+        </div>
+    </footer>
     {% endblock %}
 </body>
 </html>
