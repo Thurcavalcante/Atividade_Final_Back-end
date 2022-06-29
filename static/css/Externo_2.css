@@ -1,6 +1,6 @@
 body                                                                /*Se aplica a pagina inicial e cardapio*/
 {
-  background: #d6d4d4;
+  background: #747373;
 
    
 }
@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6
 
 p
 {
-   color: azure;
+   color: rgb(13, 15, 15);
 }
 
 a
