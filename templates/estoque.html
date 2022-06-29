@@ -12,7 +12,20 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--link minificado do font elsom-->
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <style type="text/css">
+        .btn_produtos{
+          text-decoration: none;
+          color: black;
+        }
+        .btn_produtos:hover{
+            color: white;
+        }
+      </style>
+=======
     <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
+>>>>>>> 6e21c2ebe8f4802900b1bf441047fb60c2dc2a1b
 </head>
 <body>
     {% block conteudo %}
@@ -70,7 +83,7 @@
 
       <div class="tabela">
         <table class="table">
-            <button type="button" class="btn btn-warning">Novo Produto</button>
+            <button type="button" class="btn btn-warning"><a class="btn_produtos" href="/cadastro_itens">Novo Produto</a></button>
             <thead class="table-dark">
                 <tr>
                     <th>Id</th>
