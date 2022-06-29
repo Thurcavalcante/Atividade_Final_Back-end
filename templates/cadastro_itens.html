@@ -1,114 +1,117 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>Cadastro de Produtos</title>
-     <!--Meta Tag-->
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--CSS-->
-     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-     <!--CSS Externo-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <!--Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Gerência de cardápio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!--link minificado do font elsom-->
+  <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
 
 </head>
+
 <body>
   {% block conteudo %}
- <!--Barra de Navegação-->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">HÍBRIDO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><img src="{% static 'img_perfil_profissional/imagem_perfil (1).png' %}"
+          alt="perfil do profissional" class="rounded-circle" width="70px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <p>Olá, Kaio! <br> Bem-vindo(a)</p>
           <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Perfil
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="login.html">Entrar</a></li>
-              <li><a class="dropdown-item" href="cadastro.html">Cadastro</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="index.html">Sair</a></li>
-            </ul>
-          </li>
+            <div class="orgmenu">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="carrinho-de-compras.html"><img src="Imagens/bag-check.svg" alt="carinho de compra" height="20px" width="20px"></a>
+            <a class="nav-link" href="/index">Inicio</a>
           </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
-        </form>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/estoque">Voltar</a>
+          </li>
+          <div class="social-media">
+            <a href="/perfil_prof">
+              <img src="{% static 'img_perfil_profissional/sair.png' %}" alt="imagem para o usuario sair do site"
+                class="media-object" width="45px">
+            </a>
+          </div>
       </div>
+      </ul>
+    </div>
     </div>
   </nav>
 
-  <div class="container">
-      <div class="row">
-        <form>
-          <div class="mb-3">
-            <h2>Cadastro de produto:</h2>
-            <label for="exampleInputText" class="form-label">Título:</label>
-            <input type="text" class="form-control" id="exampleInputText" aria-describedby="textlHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputText" class="form-label">Descricão:</label><br>
-            <textarea name="descricao" id="exampleInputText" cols="50" rows="4" placeholder="Escreva aqui..."></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputNumber" class="form-label">Quantidade:</label>
-            <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="numberHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEDate" class="form-label">Data de Cadastro:</label>
-            <input type="date" class="form-control" id="exampleInputDate" aria-describedby="datelHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputTime" class="form-label">Hora de cadastro</label>
-            <input type="time" class="form-control" id="exampleInputTime" aria-describedby="timelHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputFile" class="form-label">Foto do produto:</label>
-            <input type="file" class="form-control" id="exampleInputFile" aria-describedby="filelHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Olhe para mim</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </form>
-      </div>
-  </div>
-
-
-  <!--RODAPE-->
-  <footer>
-    <div class="row rodape mt-5 bg-dark">
-      <ul class="nav justify-content-center border-bottom pb-3 mt-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Recursos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Preços</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Perguntas frequentes</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
-      </ul>
-      <div class="col-12">
-          <p class="text-center mt-3">Todos os direitos reservados - Híbrido 2022</p>
-          <p class="text-center">Av. princpal, S/N, Canguaretama - RN</p>
-          <p class="text-center mb-5">&copy; 2022 Company, Inc</p>
-      </div>
+  <form class="aling">
+    <div class="mb-3">
+      <h2>Cadastrar novo item:</h2>
+      <label for="nomeproduto" class="form-label">Nome do produto:</label>
+      <input type="text" class="form-control" id="nomeproduto" aria-describedby="nomeproduto" autofocus required>
+      <div id="nomeproduto" class="form-text">Insira corretamente os dados.</div>
     </div>
-</footer>
-  <script scrc="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  {% endblock %}
+    <div class="mb-3">
+      <label for="descricaoproduto" class="form-label">Descrição:</label>
+      <input type="text" class="form-control" id="descricaoproduto" autofocus required>
+    </div>
+
+    <div class="mb-3">
+      <label for="inputState" class="form-label"></label>
+      <select id="inputState" class="form-select">
+        <option selected>Para quantas pessoas?</option>
+        <option>1 Pessoa</option>
+        <option>2 Pessoas</option>
+        <option>4 Pessoas</option>
+        <option>6 Pessoas</option>
+      </select>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Valor:</span>
+      <span class="input-group-text">0.00</span>
+      <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" autofocus
+        required>
+    </div>
+
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      <option selected>Qual o grupo ?</option>
+      <option value="1">Pratos</option>
+      <option value="2">Bebidas com alcool</option>
+      <option value="3">Bebidas sem alcool</option>
+    </select>
+
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+      <option selected>Qual a categoria?</option>
+      <option value="1">Mais pedidos</option>
+      <option value="2">Culinaria local</option>
+      <option value="3">Sobremesas</option>
+      <option value="3">Frutos do mar?</option>
+    </select>
+    <br>
+    <div>
+      <label for="foto">Anexe uma foto do item: <br></label>
+      <input type="file" name="foto" id="foto" />
+    </div>
+    <br>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Frete grátis.</label>
+    </div>
+    <button type="submit" class="btn btn-primary bntt">Salvar</button>
+  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
 </body>
+{% endblock %}
 </html>
