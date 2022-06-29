@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from core.views import home, login, cadastro_usuario, cadastro_itens, carrinho_compras, perfil, perfil_prof, estoque, detalhe_itens, cabecario, rodape
-from core.views import base
+from core.views import base, index
 
 urlpatterns = [
     path('', home),
@@ -17,5 +17,6 @@ urlpatterns = [
     path('cabecario/', cabecario, name="cabecario"),
     path('rodape/', rodape, name="rodape"),
     path('base/', base, name="base"),
+    path('index/', index, name="index"),
     #path('/', , name=""),
 ]
