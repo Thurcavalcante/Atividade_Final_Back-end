@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--link minificado do font elsom-->
     <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <style type="text/css">
+        .btn_produtos{
+          text-decoration: none;
+          color: black;
+        }
+        .btn_produtos:hover{
+            color: white;
+        }
+      </style>
 </head>
 <body>
     {% block conteudo %}
@@ -69,7 +78,7 @@
 
       <div class="tabela">
         <table class="table">
-            <button type="button" class="btn btn-warning">Novo Produto</button>
+            <button type="button" class="btn btn-warning"><a class="btn_produtos" href="/cadastro_itens">Novo Produto</a></button>
             <thead class="table-dark">
                 <tr>
                     <th>Id</th>
