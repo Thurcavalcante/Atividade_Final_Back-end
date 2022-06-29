@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
-    <link rel="stylesheet" href="css/Externo_login.css">
+    <link rel="stylesheet" href="{% static 'css/Externo_login.css' %}">
 </head>
 <body>
+    {% block conteudo %}
     <div class="container">
         <h1>Criar conta</h1>
         <div class="social-media">
             <a href="#">
-                <img src="../imagens_geral/telas_login_cadastro/google.png" alt="Logo do Google">
+                <img src="{% static 'imagens/google.png' %}" alt="Logo do Google">
             </a>
             <a href="#">
-                <img src="../imagens_geral/telas_login_cadastro/facebook.png" alt="Logo do Facebook">
+                <img src="{% static 'imagens/facebook.png' %}" alt="Logo do Facebook">
             </a>
             <a href="#">
-                <img src="../imagens_geral/telas_login_cadastro/linkedin.png" alt="Logo do Linkedin">
+                <img src="{% static 'imagens/linkedin.png' %}" alt="Logo do Linkedin">
             </a>
         </div>
 
@@ -52,7 +53,8 @@
         </form>
     </div>
     <div class="images">
-        <img src="../imagens_geral/telas_login_cadastro/celular_sem_fundo.png" alt="Mobile">
+        <img src="{% static 'imagens/celular_s_f.png' %}" alt="Mobile">
     </div>
+    {% endblock %}
 </body>
 </html>
