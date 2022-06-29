@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!--link minificado do font elsom-->
   <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
-
 </head>
 
 <body>
@@ -36,13 +35,13 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="dados_cadastrais_cliente.html">Meus dados</a>
+            <a class="nav-link" href="#">Meus dados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Sair</a>
+            <a class="nav-link" href="/index" tabindex="-1" aria-disabled="true">Sair</a>
           </li>
           <div class="social-media">
-            <a href="index.html">
+            <a href="/carrinho_compras">
               <img src="{% static 'imagens/bag-check.svg' %}"  alt="imagem de carrinho de compras"
                 class="media-object" width="35px">
             </a>
@@ -53,12 +52,10 @@
     </div>
   </nav>
 
-
-
   <div class="container espaco">
     <div class="row  mt-3">
       <div class="col-12 col-sm-6 col-lg-4 text-center">
-        <a href="dados_cadastrais_cliente.html"><img style="height: 200px; width: 200px;"
+        <a href="#"><img style="height: 200px; width: 200px;"
             src="{% static 'img_perfil_usuario/dados_pessoais.png' %}" alt="Imagem para dados pessoais"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Meus dados</h5>
@@ -70,7 +67,7 @@
         <h5>Meus cupons</h5>
       </div>
       <div class="col-12 col-sm-6 col-lg-4  text-center">
-        <a href="compras_realizadas.html"><img style="height: 200px; width: 200px;" src="{% static 'img_perfil_usuario/compras.png' %}"
+        <a href="#"><img style="height: 200px; width: 200px;" src="{% static 'img_perfil_usuario/compras.png' %}"
             alt="Imagem de compras online"
             class="media-object  img-responsive img-thumbnail img-fluid rounded-circle"></a>
         <h5>Compras realizadas</h5>
