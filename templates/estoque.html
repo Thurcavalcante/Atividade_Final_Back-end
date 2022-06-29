@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -11,13 +12,13 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--link minificado do font elsom-->
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+    <link rel="stylesheet" href="{% static 'css/Externo_2.css' %}">
 </head>
 <body>
     {% block conteudo %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../imagens_geral/perfil_profissional/imagem_perfil (1).png"
+            <a class="navbar-brand" href="#"><img src="{% static 'img_perfil_profissional/imagem_perfil (1).png' %}"
                     alt="perfil do profissional" class="rounded-circle" width="70px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,7 +39,7 @@
 
                 <div class="social-media">
                     <a href="perfil_profissional.html">
-                        <img src="../imagens_geral/perfil_profissional/sair.png"
+                        <img src="{% static 'img_perfil_profissional/sair.png' %}"
                             alt="imagem para o usuario sair do site" class="media-object" width="45px">
                     </a>
                 </div>

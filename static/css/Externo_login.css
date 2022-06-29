@@ -127,8 +127,8 @@ a:hover
     margin-top: 20 px;
     border: none;
     border-radius: 32px;
-    background: #038ef8; /*Cor do botão*/
-    color: rgb(17, 75, 151);        /*Cor da fonte*/
+    background: #888a8b; /*Cor do botão*/
+    color: rgb(88, 91, 95);        /*Cor da fonte*/
     font-size: 1.1rem; /*Tamanho da fonte*/
     transition: all .3s ease-in-out; /*Tempo de transição do efeito*/
 }
