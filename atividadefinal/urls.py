@@ -2,7 +2,8 @@ from django.contrib import admin
 from django.urls import path
 from core.views import home, login, cadastro_usuario, cadastro_itens, carrinho_compras, perfil, perfil_prof, estoque, detalhe_itens, cabecario, rodape
 from core.views import base, index
-
+#Cruds#
+from core.views import listar_produtos, cadastrar_produto, opcao_produto, editar_produto, remover_produto
 urlpatterns = [
     path('', home),
     path('admin/', admin.site.urls),
@@ -18,5 +19,11 @@ urlpatterns = [
     path('rodape/', rodape, name="rodape"),
     path('base/', base, name="base"),
     path('index/', index, name="index"),
+    #cruds#
+    path('opcao_cadastro/', opcao_produto, name= 'opcao_produto'),
+    path('produtos/', listar_produtos, name= 'listar_produtos'),
+    path('produto_cadastrar/', cadastrar_produto, name= 'cadastrar_produto'),
+    path('produto_editar/<int:id>/', editar_produto, name='editar_produto'),
+    path('produto_remover/<int:id>/', remover_produto, name='remover_produto'),
     #path('/', , name=""),
 ]
