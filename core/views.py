@@ -33,9 +33,6 @@ def index(request):
     return render(request, '.html')'''
 
    ############## Cruds ##########
-   
-from .models import Produto #".models" pois é um arquivo do mesmo diretorio
-from .forms import ProdutoForm
 
 def listar_produtos(request):
     produtos = Produto.objects.all()
